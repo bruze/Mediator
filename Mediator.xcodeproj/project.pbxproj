@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC24EF562091081900BD57EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF552091081900BD57EE /* AppDelegate.swift */; };
+		DC24EF582091081900BD57EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF572091081900BD57EE /* ViewController.swift */; };
+		DC24EF5B2091081900BD57EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC24EF592091081900BD57EE /* Main.storyboard */; };
+		DC24EF5D2091081900BD57EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC24EF5C2091081900BD57EE /* Assets.xcassets */; };
+		DC24EF602091081900BD57EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC24EF5E2091081900BD57EE /* LaunchScreen.storyboard */; };
+		DC24EF6B2091081900BD57EE /* MediatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF6A2091081900BD57EE /* MediatorTests.swift */; };
+		DC24EF762091081900BD57EE /* MediatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF752091081900BD57EE /* MediatorUITests.swift */; };
+		DC24EF852091083900BD57EE /* SceneReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF842091083900BD57EE /* SceneReceiver.swift */; };
+		DC24EF872091085400BD57EE /* SceneMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF862091085400BD57EE /* SceneMediator.swift */; };
+		DC24EF892091087B00BD57EE /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF882091087B00BD57EE /* Grid.swift */; };
+		DC24EF8B2091088C00BD57EE /* InvoiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF8A2091088C00BD57EE /* InvoiceItem.swift */; };
+		DC24EF8D209114CE00BD57EE /* SceneOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF8C209114CE00BD57EE /* SceneOperator.swift */; };
+		DC33A14020BA4AAB009EFB62 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33A13F20BA4AAB009EFB62 /* Bill.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC24EF672091081900BD57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC24EF4A2091081900BD57EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC24EF512091081900BD57EE;
+			remoteInfo = Mediator;
+		};
+		DC24EF722091081900BD57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC24EF4A2091081900BD57EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC24EF512091081900BD57EE;
+			remoteInfo = Mediator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC24EF522091081900BD57EE /* Mediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC24EF552091081900BD57EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC24EF572091081900BD57EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC24EF5A2091081900BD57EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC24EF5C2091081900BD57EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC24EF5F2091081900BD57EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC24EF612091081900BD57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC24EF662091081900BD57EE /* MediatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC24EF6A2091081900BD57EE /* MediatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorTests.swift; sourceTree = "<group>"; };
+		DC24EF6C2091081900BD57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC24EF712091081900BD57EE /* MediatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC24EF752091081900BD57EE /* MediatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorUITests.swift; sourceTree = "<group>"; };
+		DC24EF772091081900BD57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC24EF842091083900BD57EE /* SceneReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneReceiver.swift; sourceTree = "<group>"; };
+		DC24EF862091085400BD57EE /* SceneMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneMediator.swift; sourceTree = "<group>"; };
+		DC24EF882091087B00BD57EE /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		DC24EF8A2091088C00BD57EE /* InvoiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItem.swift; sourceTree = "<group>"; };
+		DC24EF8C209114CE00BD57EE /* SceneOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneOperator.swift; sourceTree = "<group>"; };
+		DC33A13F20BA4AAB009EFB62 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC24EF4F2091081900BD57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EF632091081900BD57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EF6E2091081900BD57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC24EF492091081900BD57EE = {
+			isa = PBXGroup;
+			children = (
+				DC24EF542091081900BD57EE /* Mediator */,
+				DC24EF692091081900BD57EE /* MediatorTests */,
+				DC24EF742091081900BD57EE /* MediatorUITests */,
+				DC24EF532091081900BD57EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC24EF532091081900BD57EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC24EF522091081900BD57EE /* Mediator.app */,
+				DC24EF662091081900BD57EE /* MediatorTests.xctest */,
+				DC24EF712091081900BD57EE /* MediatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC24EF542091081900BD57EE /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				DC24EF832091082500BD57EE /* Pattern */,
+				DC24EF552091081900BD57EE /* AppDelegate.swift */,
+				DC24EF572091081900BD57EE /* ViewController.swift */,
+				DC24EF592091081900BD57EE /* Main.storyboard */,
+				DC24EF5C2091081900BD57EE /* Assets.xcassets */,
+				DC24EF5E2091081900BD57EE /* LaunchScreen.storyboard */,
+				DC24EF612091081900BD57EE /* Info.plist */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		DC24EF692091081900BD57EE /* MediatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC24EF6A2091081900BD57EE /* MediatorTests.swift */,
+				DC24EF6C2091081900BD57EE /* Info.plist */,
+			);
+			path = MediatorTests;
+			sourceTree = "<group>";
+		};
+		DC24EF742091081900BD57EE /* MediatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC24EF752091081900BD57EE /* MediatorUITests.swift */,
+				DC24EF772091081900BD57EE /* Info.plist */,
+			);
+			path = MediatorUITests;
+			sourceTree = "<group>";
+		};
+		DC24EF832091082500BD57EE /* Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				DC24EF842091083900BD57EE /* SceneReceiver.swift */,
+				DC24EF862091085400BD57EE /* SceneMediator.swift */,
+				DC24EF8C209114CE00BD57EE /* SceneOperator.swift */,
+				DC24EF882091087B00BD57EE /* Grid.swift */,
+				DC24EF8A2091088C00BD57EE /* InvoiceItem.swift */,
+				DC33A13F20BA4AAB009EFB62 /* Bill.swift */,
+			);
+			path = Pattern;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC24EF512091081900BD57EE /* Mediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC24EF7A2091081900BD57EE /* Build configuration list for PBXNativeTarget "Mediator" */;
+			buildPhases = (
+				DC24EF4E2091081900BD57EE /* Sources */,
+				DC24EF4F2091081900BD57EE /* Frameworks */,
+				DC24EF502091081900BD57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mediator;
+			productName = Mediator;
+			productReference = DC24EF522091081900BD57EE /* Mediator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC24EF652091081900BD57EE /* MediatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC24EF7D2091081900BD57EE /* Build configuration list for PBXNativeTarget "MediatorTests" */;
+			buildPhases = (
+				DC24EF622091081900BD57EE /* Sources */,
+				DC24EF632091081900BD57EE /* Frameworks */,
+				DC24EF642091081900BD57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC24EF682091081900BD57EE /* PBXTargetDependency */,
+			);
+			name = MediatorTests;
+			productName = MediatorTests;
+			productReference = DC24EF662091081900BD57EE /* MediatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC24EF702091081900BD57EE /* MediatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC24EF802091081900BD57EE /* Build configuration list for PBXNativeTarget "MediatorUITests" */;
+			buildPhases = (
+				DC24EF6D2091081900BD57EE /* Sources */,
+				DC24EF6E2091081900BD57EE /* Frameworks */,
+				DC24EF6F2091081900BD57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC24EF732091081900BD57EE /* PBXTargetDependency */,
+			);
+			name = MediatorUITests;
+			productName = MediatorUITests;
+			productReference = DC24EF712091081900BD57EE /* MediatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC24EF4A2091081900BD57EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bruno Garelli";
+				TargetAttributes = {
+					DC24EF512091081900BD57EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DC24EF652091081900BD57EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC24EF512091081900BD57EE;
+					};
+					DC24EF702091081900BD57EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC24EF512091081900BD57EE;
+					};
+				};
+			};
+			buildConfigurationList = DC24EF4D2091081900BD57EE /* Build configuration list for PBXProject "Mediator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC24EF492091081900BD57EE;
+			productRefGroup = DC24EF532091081900BD57EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC24EF512091081900BD57EE /* Mediator */,
+				DC24EF652091081900BD57EE /* MediatorTests */,
+				DC24EF702091081900BD57EE /* MediatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC24EF502091081900BD57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC24EF602091081900BD57EE /* LaunchScreen.storyboard in Resources */,
+				DC24EF5D2091081900BD57EE /* Assets.xcassets in Resources */,
+				DC24EF5B2091081900BD57EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EF642091081900BD57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EF6F2091081900BD57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC24EF4E2091081900BD57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC33A14020BA4AAB009EFB62 /* Bill.swift in Sources */,
+				DC24EF852091083900BD57EE /* SceneReceiver.swift in Sources */,
+				DC24EF872091085400BD57EE /* SceneMediator.swift in Sources */,
+				DC24EF8D209114CE00BD57EE /* SceneOperator.swift in Sources */,
+				DC24EF582091081900BD57EE /* ViewController.swift in Sources */,
+				DC24EF892091087B00BD57EE /* Grid.swift in Sources */,
+				DC24EF8B2091088C00BD57EE /* InvoiceItem.swift in Sources */,
+				DC24EF562091081900BD57EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EF622091081900BD57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC24EF6B2091081900BD57EE /* MediatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EF6D2091081900BD57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC24EF762091081900BD57EE /* MediatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC24EF682091081900BD57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC24EF512091081900BD57EE /* Mediator */;
+			targetProxy = DC24EF672091081900BD57EE /* PBXContainerItemProxy */;
+		};
+		DC24EF732091081900BD57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC24EF512091081900BD57EE /* Mediator */;
+			targetProxy = DC24EF722091081900BD57EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC24EF592091081900BD57EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC24EF5A2091081900BD57EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC24EF5E2091081900BD57EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC24EF5F2091081900BD57EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC24EF782091081900BD57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC24EF792091081900BD57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC24EF7B2091081900BD57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP26MANV5C;
+				INFOPLIST_FILE = Mediator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nobly.Mediator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC24EF7C2091081900BD57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP26MANV5C;
+				INFOPLIST_FILE = Mediator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nobly.Mediator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC24EF7E2091081900BD57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP26MANV5C;
+				INFOPLIST_FILE = MediatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nobly.MediatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mediator.app/Mediator";
+			};
+			name = Debug;
+		};
+		DC24EF7F2091081900BD57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP26MANV5C;
+				INFOPLIST_FILE = MediatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nobly.MediatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mediator.app/Mediator";
+			};
+			name = Release;
+		};
+		DC24EF812091081900BD57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP26MANV5C;
+				INFOPLIST_FILE = MediatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nobly.MediatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mediator;
+			};
+			name = Debug;
+		};
+		DC24EF822091081900BD57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RP26MANV5C;
+				INFOPLIST_FILE = MediatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nobly.MediatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mediator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC24EF4D2091081900BD57EE /* Build configuration list for PBXProject "Mediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC24EF782091081900BD57EE /* Debug */,
+				DC24EF792091081900BD57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC24EF7A2091081900BD57EE /* Build configuration list for PBXNativeTarget "Mediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC24EF7B2091081900BD57EE /* Debug */,
+				DC24EF7C2091081900BD57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC24EF7D2091081900BD57EE /* Build configuration list for PBXNativeTarget "MediatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC24EF7E2091081900BD57EE /* Debug */,
+				DC24EF7F2091081900BD57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC24EF802091081900BD57EE /* Build configuration list for PBXNativeTarget "MediatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC24EF812091081900BD57EE /* Debug */,
+				DC24EF822091081900BD57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC24EF4A2091081900BD57EE /* Project object */;
+}
