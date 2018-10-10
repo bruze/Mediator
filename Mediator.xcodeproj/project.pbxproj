@@ -15,7 +15,6 @@
 		DC24EF6B2091081900BD57EE /* MediatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF6A2091081900BD57EE /* MediatorTests.swift */; };
 		DC24EF762091081900BD57EE /* MediatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF752091081900BD57EE /* MediatorUITests.swift */; };
 		DC24EF852091083900BD57EE /* SceneReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF842091083900BD57EE /* SceneReceiver.swift */; };
-		DC24EF872091085400BD57EE /* SceneMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF862091085400BD57EE /* SceneMediator.swift */; };
 		DC24EF892091087B00BD57EE /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF882091087B00BD57EE /* Grid.swift */; };
 		DC24EF8B2091088C00BD57EE /* InvoiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF8A2091088C00BD57EE /* InvoiceItem.swift */; };
 		DC24EF8D209114CE00BD57EE /* SceneOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24EF8C209114CE00BD57EE /* SceneOperator.swift */; };
@@ -54,7 +53,6 @@
 		DC24EF752091081900BD57EE /* MediatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorUITests.swift; sourceTree = "<group>"; };
 		DC24EF772091081900BD57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC24EF842091083900BD57EE /* SceneReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneReceiver.swift; sourceTree = "<group>"; };
-		DC24EF862091085400BD57EE /* SceneMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneMediator.swift; sourceTree = "<group>"; };
 		DC24EF882091087B00BD57EE /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		DC24EF8A2091088C00BD57EE /* InvoiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItem.swift; sourceTree = "<group>"; };
 		DC24EF8C209114CE00BD57EE /* SceneOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneOperator.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				DC24EF842091083900BD57EE /* SceneReceiver.swift */,
-				DC24EF862091085400BD57EE /* SceneMediator.swift */,
 				DC24EF8C209114CE00BD57EE /* SceneOperator.swift */,
 				DC24EF882091087B00BD57EE /* Grid.swift */,
 				DC24EF8A2091088C00BD57EE /* InvoiceItem.swift */,
@@ -287,7 +284,6 @@
 			files = (
 				DC33A14020BA4AAB009EFB62 /* Bill.swift in Sources */,
 				DC24EF852091083900BD57EE /* SceneReceiver.swift in Sources */,
-				DC24EF872091085400BD57EE /* SceneMediator.swift in Sources */,
 				DC24EF8D209114CE00BD57EE /* SceneOperator.swift in Sources */,
 				DC24EF582091081900BD57EE /* ViewController.swift in Sources */,
 				DC24EF892091087B00BD57EE /* Grid.swift in Sources */,

@@ -7,31 +7,20 @@
 //
 
 import Foundation
-//typealias SceneOperator = AnySceneReceiver<Any> & AnySceneMediator<Any>
+
 protocol SceneOperator {
-    associatedtype OperateUpon: SceneReceiver
-    func operate(_ receiver: OperateUpon/*, _ mediator: AnySceneMediator<Any>*/)
+    func operate(_ receiver: AnySceneReceiver<Any>)
 }
 
 extension SceneOperator {
-    /*func operate(_ receiver: AnySceneReceiver<InvoiceItem>/*, _ mediator: AnySceneMediator<Any>*/) {
-        print()
-    }*/
-    
-    func operate(_ receiver: OperateUpon) {
+    func operate(_ receiver: AnySceneReceiver<Any>) {
         print()
     }
 }
 
-class AnySceneOperator<T: SceneReceiver>: SceneOperator {
-    typealias OperateUpon = T
-
-    func operate(_ receiver: T) {
+class AnySceneOperator<T>: SceneOperator {
+    func operate<T>(_ receiver: T) where T : AnySceneReceiver<Any> {
         print()
     }
-
-    /*func operate(_ receiver: AnySceneReceiver<Any>) {
-        print()
-    }*/
 }
 

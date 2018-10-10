@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         grid.operate(bill)
         let items = [InvoiceItem(), InvoiceItem()]
         grid.did(Tap: items.first!)
+        items[0].operate(items[1])
     }
 
     override func didReceiveMemoryWarning() {
