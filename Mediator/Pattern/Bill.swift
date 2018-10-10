@@ -9,7 +9,12 @@
 import Foundation
 
 class Bill: SceneReceiver {
-    func receive<R: Grid>(From sender: R) {
+    typealias ReceiveFrom = Grid
+    
+    
+    //typealias Receiver = Bill
+    
+    /*func receive<R: Grid>(From sender: R) {
         print()
-    }
+    }*/
 }

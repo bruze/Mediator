@@ -18,13 +18,14 @@ class Grid/*: AnySceneOperator<InvoiceItem>*/ {
 }
 
 extension Grid: SceneOperator {
+    func operate(_ receiver: AnySceneReceiver<Grid>) {
+        print()
+    }
+    
+    
     /*func operate(_ receiver: AnySceneReceiver<Any>) {
         print()
     }*/
-    
-    func receive<U: InvoiceItem>(From sender: AnySceneOperator<U>) {
-        print()
-    }
     
     /*func mediate(With receiver: /*AnySceneReceiver<Any>*/SceneReceiver) {
         print()
