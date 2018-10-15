@@ -8,17 +8,18 @@
 
 import Foundation
 protocol SceneReceiver {
-    //associatedtype Receiver
-    func receive(From sender: AnySceneOperator<Any>)
+    associatedtype Sender: SceneOperator
+    func receive(From sender: AnySceneOperator<Sender>)
 }
 
 extension SceneReceiver {
-    func receive(From sender: AnySceneOperator<Any>) {
-        print()
+    func receive(From sender: AnySceneOperator<Sender>) {
+        
     }
 }
 
-class AnySceneReceiver<T>: SceneReceiver {
+class AnySceneReceiver<T: SceneOperator>: SceneReceiver {
+    typealias Sender = T
     /*func receive(From sender: AnySceneOperator<Any>) {
         print()
     }*/

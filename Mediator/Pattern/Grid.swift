@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Grid/*: AnySceneOperator<InvoiceItem>*/ {
+final class Grid/*: AnySceneOperator<InvoiceItem>*/ {
     var items = [InvoiceItem]()
     
     func did(Tap item: InvoiceItem) {
@@ -18,9 +18,10 @@ class Grid/*: AnySceneOperator<InvoiceItem>*/ {
 }
 
 extension Grid: SceneOperator {
-    /*func operate(_ receiver: AnySceneReceiver<Any>) {
-        print()
-    }*/
+    func operate<U: SceneReceiver>(_ receiver: U) where U.Sender == Grid {
+        receiver.receive(From: AnySceneOperator<Grid>(self))
+    }
+    
     
     func receive<U: InvoiceItem>(From sender: AnySceneOperator<U>) {
         print()
@@ -34,11 +35,11 @@ extension Grid: SceneOperator {
     
     //typealias Mediator = Grid
 
-    func operate</*R: SceneMediator,*/ U: Bill>(_ receiver: U/*, _ mediator: AnySceneMediator<U>*/) {
+    /*func operate</*R: SceneMediator,*/ U: Bill>(_ receiver: U/*, _ mediator: AnySceneMediator<U>*/) {
         receiver.receive(From: self)
     }
     
     func operate</*R: SceneMediator,*/ U: InvoiceItem>(_ receiver: U/*, _ mediator: AnySceneMediator<U>*/) {
         receiver.receive(From: self)
-    }
+    }*/
 }

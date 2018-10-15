@@ -9,7 +9,14 @@
 import Foundation
 
 class Bill: SceneReceiver {
+    func receive(From sender: AnySceneOperator<Grid>) {
+        print()
+    }
+    
+    typealias Sender = Grid
+    
     func receive<R: Grid>(From sender: R) {
+        sender.callback()
         print()
     }
 }

@@ -12,6 +12,12 @@ class InvoiceItem {
 }
 
 extension InvoiceItem: SceneReceiver {
+    func receive(From sender: AnySceneOperator<Grid>) {
+        print()
+    }
+    
+    typealias Sender = Grid
+    
     /*func receive(From sender: AnySceneOperator<Any>) {
         print()
     }*/
